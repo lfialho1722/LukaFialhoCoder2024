@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Diamantis</title>
+    <link rel="shortcut icon" type="x-icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+
+    <section class="header" id="inicio">
+        <nav>
+            <a href="../index.html"><img src="../images/logo.png" alt="Diamantis Logo"></a>
+            <div class="nav-links" id="NavLinks">
+                <i class="fa fa-regular fa-circle-xmark" onclick="EsconderMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="campus.html">Campus</a></li>
+                    <li><a href="testimonios.html">Testimonios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-solid fa-ellipsis" onclick="MostrarMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>La facultad de mayor renombre</h1>
+            <p>Se destaca una facultad cuyo
+                prestigio trasciende fronteras, <br>
+                reconocida por su excelencia académica
+                y altos estándares de exigencia.</p>
+                <a href="" class="h-btn">Visítanos para conocer más</a>
+
+        </div>
+    </section>
+
+    <section class="cursos" id="cursos">
+        <h2>Cursos que ofrecemos</h2>
+        <p>Variedad académica y calidad excepcional: nuestra facultad lo tiene todo.</p>
+        <div class="fila">
+            <div class="col-cursos">
+                <h3>Intermedio</h3>
+                <p>Sumérgete en un curso intermedio que combina profundidad y diversidad para llevarte al siguiente nivel de conocimiento y habilidades.</p>
+            </div>
+            <div class="col-cursos">
+                <h3>Profundización</h3>
+                <p>En nuestro curso de profundización, alcanzarás nuevas alturas de conocimiento y especialización, <br> respaldado por expertos en la materia y un enfoque riguroso en tu área de interés.</p>
+            </div>
+            <div class="col-cursos">
+                <h3>Postgrado</h3>
+                <p>Explora nuevas fronteras en tu campo elegido con nuestro programa de postgrado, donde la excelencia académica <br> se combina con la investigación de vanguardia y la experiencia práctica, preparándote para liderar en tu industria.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h4>Sobre nosotros</h4>
+        <p>La facultad más prestigiosa del mundo se destaca por su excelencia académica, innovación constante y una comunidad dedicada al aprendizaje. <br> Sus raíces se hunden en una rica tradición de liderazgo intelectual, formando una base sólida para el éxito continuo.</p>
+        <div class="iconos">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Hecho por Luka Fialho para CoderHouse</p>
+    </footer>
+
+    <!-- Este script de js controla si el menú responsive es visible o no al pulsar el ícono correspondiente -->
+
+    <script>
+        var NavLinks = document.getElementById("NavLinks");
+        function MostrarMenu() {
+            NavLinks.style.right = "0";
+        }
+        function EsconderMenu() {
+            NavLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
